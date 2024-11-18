@@ -1,0 +1,24 @@
+{
+  "name": "medical-report-analyzer",
+  "version": "1.0.0",
+  "description": "AI-powered medical report analysis system",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd frontend && npm install",
+    "audit-fix": "npm audit fix && cd frontend && npm audit fix"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
